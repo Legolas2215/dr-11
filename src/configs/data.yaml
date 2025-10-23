@@ -1,0 +1,4 @@
+# Data source:
+#    format: JSON
+#    url: https://api.example.com/data
+#    meta data: This file contains configuration settings for the application, including database connections, API keys, and other environment-specific variables.

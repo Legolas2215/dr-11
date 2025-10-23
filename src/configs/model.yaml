@@ -1,0 +1,47 @@
+# Model: test_match
+Test_XGB:
+  type: xgboost
+  format: test_matches
+  hyper_parameters:
+    n_estimators: 100
+    max_depth: 3
+    learning_rate: 0.1
+
+# Model: odi_match
+ODI_DTC:
+  type: decision_tree
+  format: odi_matches
+  hyper_parameters:
+    max_depth: 10
+    min_samples_split: 2
+    min_samples_leaf: 1
+
+# Model: All matches
+ALL_LGBM:
+  type: LightGBM
+  format: all_matches
+  hyper_parameters:
+    n_estimators: 100
+    max_depth: 3
+    learning_rate: 0.1
+
+#Alpha: T20
+T20_alpha_xgb:
+    n_estimators: 118 
+    learning_rate: 0.011249635041768694
+    max_depth: 3
+    subsample: 0.9992351031913278
+    colsample_bytree: 0.9990768716341123
+    gamma: 0.026585305849646086
+    reg_alpha: 0.7759997070138601
+    reg_lambda: 1.7852291796766997
+
+multi_day_alpha_xgb:
+    n_estimators: 118 
+    learning_rate: 0.011249635041768694
+    max_depth: 3
+    subsample: 0.9992351031913278
+    colsample_bytree: 0.9990768716341123
+    gamma: 0.026585305849646086
+    reg_alpha: 0.7759997070138601
+    reg_lambda: 1.7852291796766997
